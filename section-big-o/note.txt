@@ -1,0 +1,8 @@
+/** importance links and note **/
+
+/*** 
+ * note
+***/
+1. Big O and Scalability.
+  we see that as our input grew, our function Find `Nemo` became slower and slower and slower.
+  Our runtime, how long it takes to run a certain problem through a function, increased.

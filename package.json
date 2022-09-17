@@ -1,0 +1,25 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wakidurrahman/JavaScript-Algorithms-And-Data-Structures.git"
+  },
+  "keywords": [
+    "prictice"
+  ],
+  "author": "wakidurrahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wakidurrahman/JavaScript-Algorithms-And-Data-Structures/issues"
+  },
+  "homepage": "https://github.com/wakidurrahman/JavaScript-Algorithms-And-Data-Structures#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}

@@ -26,4 +26,4 @@ const selectionSort = (array: props): number[] | string[] => {
 const selection: props = [3, 4, 9, 3, 1, 2, 4, 5, 6,]
 // selectionSort(selection);
 
-console.log(selection);
+console.log(selectionSort(selection));

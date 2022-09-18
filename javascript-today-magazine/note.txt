@@ -7,3 +7,20 @@ short: JavaScriptTM
 1. Bubble Sort
 2. Selection Sort
 3. Merge Sort
+4. Stack data structure: A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first. You can think of the stack data structure as the pile of plates on top of another.
+Here's a JavaScript implementation of a stack data structure  👏
+Should we continue discussing data structures and algorithms? Let us know 🔥🔥🔥
+5. NodeJS password generator you can use in your terminal. 
+https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FJavaScriptTodayMagazine%2Fposts%2Fpfbid021EZHDZjFvLjSHGQ66DHdYuvEPQ595YjPPAQMpAUBek8cNAbgrwPjgNN5WLVQD6M6l&show_text=true&width=500
+
+6. 
+Reverse a string. It's a common interview question, and it's quite simple. However, if you really want to impress your interviewer, you'd be well-off to understand multiple solutions to the problem. Rather than using built-in methods like ".reverse()" (which is fine, but you may be asked to neglect using it), demonstrate your ability to solve it in different ways. 
+Here are three solutions to reversing a string in JavaScript.
+
+7. Write a function that returns the number of vowels in a string. 
+Here we have two solutions, one makes use of a regular expression, and another uses an iterative approach, a for-of loop. 
+
+8.  familiarize yourself with these string and array methods. 🚀 
+If you want to make your development life easier, familiarize yourself with these string and array methods. 🚀 
+Learn them inside-out. Try running them on your machine right now to see the behavior of each of them. 👏
+Let us know what you think about these built-in methods down below. Want to increase your JavaScript skills? 

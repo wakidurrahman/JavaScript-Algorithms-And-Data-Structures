@@ -1,4 +1,7 @@
 # JavaScript Algorithms And Data Structures
+## JavaScript based examples of many algorithms and data structures.
+☝ Note that this repository is meant to be used for learning and researching purposes only.
+
 What you will learn in here.
 
 Technical:

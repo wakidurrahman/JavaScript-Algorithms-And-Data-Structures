@@ -60,9 +60,21 @@ be accessed and modified efficiently. More exactly, a data structure is a collec
 values, the relationships among them, and the functions or operations that can be applied to
 the data.
 
--[ ] Queue 
--[ ] Stack
-
+- ✅ done
+- ⬜ Arrays
+- ⬜ Hash Tables
+- ⬜ Singly Linked Lists
+- ⬜ Doubly Linked Lists
+- ⬜ Queues
+- ⬜ Stacks
+- ⬜ Trees 
+    - ⬜ BST
+    - ⬜ AVL 
+    - ⬜ Trees 
+    - ⬜ Red Black Trees, 
+    - ⬜ Binary Heaps
+- ⬜ Tries
+- ⬜ Graphs
 ## Algorithms
 
 An algorithm is an unambiguous specification of how to solve a class of problems. It is

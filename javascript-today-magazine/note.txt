@@ -2,7 +2,7 @@
 JavaScript Today Magazine
 short: JavaScriptTM
 [JavaScriptTM] Bubble Sort
-
+[DataStructuresAlgorithms] 
 17.09.2022: Some common algorithms implemented in JavaScript: Bubble Sort, Selection Sort, and Merge Sort.
 1. Bubble Sort
 2. Selection Sort

@@ -1,8 +1,9 @@
 # JavaScript Algorithms And Data Structures
+Many developers who are "self-educated", feel that one of the main disadvantages they face compared to college/university educated graduates in computer science is that they don't have knowledge about algorithms, data structures, and the notorious/famous Big-O Notation. Get on the same level as someone with a computer science degree by learning the fundamental building blocks of computer science, which will boost you during real-life problem solving.
 ## JavaScript based examples of many algorithms and data structures.
-☝ Note that this repository is meant to be used for learning and researching purposes only.
+*☝ Note that this repository is meant to be used for learning and researching purposes only.
 
-### Big O Notation
+## Big O Notation
 
 *Big O notation* is used to classify algorithms according to how their running time or space requirements grow as the input size grows.
 On the chart below it is showing the most common orders of growth of algorithms specified in Big O notation.
@@ -52,7 +53,12 @@ Below is the list of some of the most used Big O notations and their performance
 | **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Yes       | r - biggest number in array |
 | **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Yes       | k - length of longest key |
 
+## Data Structures
 
+A data structure is a particular way of organizing and storing data in a computer so that it can
+be accessed and modified efficiently. More exactly, a data structure is a collection of data
+values, the relationships among them, and the functions or operations that can be applied to
+the data.
 
 What you will learn in here.
 

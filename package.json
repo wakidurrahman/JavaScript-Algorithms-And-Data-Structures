@@ -1,10 +1,10 @@
 {
   "name": "npm",
   "version": "1.0.0",
-  "description": "",
+  "description": "JavaScript based examples of many algorithms and data structures. Note that this repository is meant to be used for learning and researching purposes only.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",

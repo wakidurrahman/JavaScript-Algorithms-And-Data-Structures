@@ -1,6 +1,6 @@
 # JavaScript Algorithms And Data Structures
-
 What you will learn in here.
+
 Technical:
 
 1. Big O notation

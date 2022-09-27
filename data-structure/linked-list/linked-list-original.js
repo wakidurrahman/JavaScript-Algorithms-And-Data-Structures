@@ -50,4 +50,28 @@ export default class LinkedList {
 
     return this;
   }
+
+  /**
+   * @return {LinkedListNode[]}
+   */
+  toArray() {
+    const nodes = [];
+
+    let currentNode = this.head;
+    while (currentNode) {
+      nodes.push(currentNode);
+      currentNode = currentNode.next;
+    }
+    return nodes;
+  }
+
+  /**
+   * @param {function} [callback]
+   * @returns {string}
+   */
+  toString(callback) {
+    return this.toArray()
+      .map((node) => node.toString(callback))
+      .toString();
+  }
 }

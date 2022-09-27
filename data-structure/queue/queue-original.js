@@ -1,4 +1,4 @@
-import LinkedList from "../linked-list/linked-list-original";
+import LinkedList from "../linked-list/linked-list-original.js";
 
 export default class Queue {
   constructor() {
@@ -59,3 +59,10 @@ export default class Queue {
     return this.linkedList.toString(callback);
   }
 }
+
+const queue = new Queue();
+
+queue.enqueue(1);
+queue.enqueue(2);
+
+console.log(queue);

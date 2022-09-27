@@ -1,8 +1,8 @@
 export default class Comparator {
   /**
    * Constructor.
-   * @param {function(a: *, b: *)} [compareFunction] - It may be custom compare function that, let's
-   * say may compare custom objects together.
+   * @param {function(a: *, b: *)} [compareFunction] - It may be custom compare function that, 
+   * let's say may compare custom objects together.
    */
 
   constructor(compareFunction) {

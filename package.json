@@ -16,7 +16,9 @@
     "data-structures",
     "javascript",
     "algorithm",
-    "javascript-algorithms"
+    "javascript-algorithms",
+    "unit-test",
+    "coverage"
   ],
   "author": "Wakidur Rahman",
   "license": "ISC",

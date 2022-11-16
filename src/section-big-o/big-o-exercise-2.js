@@ -28,8 +28,10 @@ function bigOCalculationChallengeTwo(limit) {
  * n + n + n + n + n + n + n  => "O(n)"
  * 4 + 7n
  * BIG O(4 + 7n) TODO: if we calculate for loop step
+ * O(4 + 7n) === O(n) equivalence to O(n)
  * n + n + n + n + n   => "O(n)"
  * BIG O(4 + 5n) TODO: no for loop
+ * O(4 + 5n) === O(n) equivalence to O(n)
  */
 
 bigOCalculationChallengeTwo(12);

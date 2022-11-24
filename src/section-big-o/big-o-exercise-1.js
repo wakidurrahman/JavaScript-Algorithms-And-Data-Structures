@@ -1,6 +1,6 @@
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 
-function funChallenge(input) {
+function bigOCalculationChallengeOne(input) {
   let a = 10; // O(1) => 1
   a = 50 + 3; // O(1) => 2
 
@@ -15,9 +15,8 @@ function funChallenge(input) {
   return a; // O(1) => 3
 }
 
-//
 /**
- * Calculation
+ * BIG O Calculation
  * 3 "O(1)"
  * n + n + n + n "O(n)"
  * 3 + 4n
@@ -30,4 +29,4 @@ function printHello() {
 
 const inputArray = new Array(100).fill("a");
 
-funChallenge(inputArray);
+bigOCalculationChallengeOne(inputArray);

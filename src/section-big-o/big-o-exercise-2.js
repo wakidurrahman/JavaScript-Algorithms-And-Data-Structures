@@ -24,9 +24,11 @@ function bigOCalculationChallengeTwo(limit) {
 
 /**
  * BIG O Calculation
- * 4 => "O(1)"
+ * 4 => "O(1)" Four big O
+ * 7 => "O(n)" Seven big O n
  * n + n + n + n + n + n + n  => "O(n)"
  * 4 + 7n
+ *
  * BIG O(4 + 7n) TODO: if we calculate for loop step
  * O(4 + 7n) === O(n) equivalence to O(n)
  * n + n + n + n + n   => "O(n)"

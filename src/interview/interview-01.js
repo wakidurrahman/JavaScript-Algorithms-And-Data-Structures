@@ -52,3 +52,8 @@ function containsCommonItem2(users, items) {
 // O(a + b)
 // O(users, items)
 // O(users) - space complexity
+
+// Way 3
+function containsCommonItem3(arr1, arr2) {
+  return arr1.some((item) => arr2.includes(item));
+}

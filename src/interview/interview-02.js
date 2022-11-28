@@ -22,4 +22,25 @@ function hasPairWithSum(arr, sum) {
 const array = [6, 4, 3, 2, 1, 7];
 const sum = 9;
 
-hasPairWithSum(array, sum);
+// hasPairWithSum(array, sum);
+
+// Better way
+
+function hasPairWithSum2(arr, sum) {
+  const setFun = new Set();
+  console.log("setFun ", setFun);
+  const len = arr.length;
+  for (let i = 0; i < len; i++) {
+    console.log(`arr ${i} `, arr[i]);
+    console.log("setFun ", setFun);
+    if (setFun.has(arr[i])) {
+      console.log("setFun.has ", setFun.has(arr[i]));
+      //   return true;
+    }
+    setFun.add(sum - arr[i]);
+    console.log("setFun.add ", setFun.add(sum - arr[i]));
+  }
+  return false;
+}
+
+hasPairWithSum2(array, sum);

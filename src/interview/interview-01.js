@@ -13,7 +13,7 @@
 
 const array1 = ["a", "b", "c", "d"];
 const array2 = ["w", "x", "y", "z"];
-
+// Way 1:
 function containsCommonItem(users, items) {
   for (let i = 0; i < users.length; i++) {
     for (let j = 0; j < items.length; j++) {
@@ -27,3 +27,28 @@ function containsCommonItem(users, items) {
 // O(1) - Space complexity
 
 containsCommonItem(array1, array2);
+
+// Way 2:
+
+function containsCommonItem2(users, items) {
+  // Loop through first array and create object where properties === items in the array
+  // Can we assume always 2 params?
+
+  let map = {};
+  for (let i = 0; i < users.length; i++) {
+    if (!map[users[i]]) {
+      const item = users[i];
+      map[item] = true;
+    }
+  }
+
+  // Loop through second array and check if item in second array exist on created object.
+  for (let j = 0; j < items.length; j++) {
+    if (map[items[j]]) return true;
+  }
+  return false;
+}
+
+// O(a + b)
+// O(users, items)
+// O(users) - space complexity

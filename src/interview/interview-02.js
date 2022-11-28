@@ -19,7 +19,7 @@ function hasPairWithSum(arr, sum) {
   return false;
 }
 
-const array = [6, 4, 3, 2, 1, 7];
+const array = [6, 3, 3, 2, 1, 7];
 const sum = 9;
 
 // hasPairWithSum(array, sum);
@@ -43,4 +43,6 @@ function hasPairWithSum2(arr, sum) {
   return false;
 }
 
-hasPairWithSum2(array, sum);
+// hasPairWithSum2(array, sum);
+hasPairWithSum2([1, 2, 3, 4, 5], sum);
+hasPairWithSum([1, 2, 3, 4, 5], sum);

@@ -1,5 +1,5 @@
 class HashTableMain {
-  private data: [] | [string, number | string][][] = [];
+  public data: [] | [string, number | string][][] = [];
   constructor(size: number) {
     this.data = new Array(size);
   }
@@ -40,6 +40,23 @@ class HashTableMain {
     }
     return undefined;
   }
+
+  /**
+   * keys
+   */
+  public keys(): (number | string)[] {
+    const keysArray: (number | string)[] = [];
+    console.log(this.data.length);
+    for (let i = 0; i < this.data.length; i++) {
+      console.log(this.data[i]);
+      if (this.data[i]) {
+        console.log(this.data[i][0]);
+        console.log(this.data[i][0][0]);
+        keysArray.push(this.data[i][0][0]);
+      }
+    }
+    return keysArray;
+  }
 }
 
 // Example
@@ -50,3 +67,5 @@ myHashTable01.set('apples', 9);
 myHashTable01.get('apples');
 myHashTable01.set('banana', 'Nice foots');
 myHashTable01.get('banana');
+myHashTable01.keys();
+console.log(myHashTable01.data);

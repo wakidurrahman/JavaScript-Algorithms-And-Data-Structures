@@ -44,7 +44,7 @@ class HashTableMain {
   /**
    * keys
    */
-  public keys(): (number | string)[] {
+  public keysOld(): (number | string)[] {
     const keysArray: (number | string)[] = [];
     console.log(this.data.length);
     for (let i = 0; i < this.data.length; i++) {
@@ -56,6 +56,28 @@ class HashTableMain {
       }
     }
     return keysArray;
+  }
+
+  public keys(): undefined | (string | [string, string | number])[] {
+    if (!this.data.length) {
+      return undefined;
+    }
+    let result: (string | [string, string | number])[] = [];
+    // loop through all the elements
+    for (let i = 0; i < this.data.length; i++) {
+      // if it's not an empty memory cell
+      if (this.data[i] && this.data[i].length) {
+        // but also loop through all the potential collisions
+        if (this.data.length > 1) {
+          for (let j = 0; j < this.data[i].length; j++) {
+            result.push(this.data[i][j][0]);
+          }
+        } else {
+          result.push(this.data[i][0]);
+        }
+      }
+    }
+    return result;
   }
 }
 
@@ -69,3 +91,25 @@ myHashTable01.set('banana', 'Nice foots');
 myHashTable01.get('banana');
 myHashTable01.keys();
 console.log(myHashTable01.data);
+console.log(myHashTable01.keys());
+
+/**
+ * 
+ * 
+ * 
+ [
+  [
+    [ 'a', 'Nice foots' ],
+    [ 'b', 'Nice foots' ],
+    [ 'c', 'Nice foots' ],
+    [ 'd', 'Nice foots' ],
+    [ 'e', 'Nice foots' ],
+    [ 'f', 'Nice foots' ],
+    [ 'g', 'Nice foots' ]
+  ],
+  <2 empty items>,
+  [ [ 'grapes', 10000 ], [ 'banana', 'Nice foots' ] ],
+  <5 empty items>,
+  [ [ 'apples', 9 ] ]
+]
+ */

@@ -25,3 +25,9 @@ function firstRecurringCharacter(array: number[]): number | undefined {
   console.log('Nothing match : undefined');
   return undefined;
 }
+
+const array01 = [2, 5, 1, 2, 3, 5, 1, 2, 4];
+const array02 = [2, 1, 1, 2, 3, 5, 1, 2, 4];
+const array03 = [2, 3, 4, 5];
+// Call function
+firstRecurringCharacter(array01);

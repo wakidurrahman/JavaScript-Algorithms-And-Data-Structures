@@ -26,6 +26,20 @@ function firstRecurringCharacter(array: number[]): number | undefined {
   return undefined;
 }
 
+// Solution 02:
+function firstRecurringCharacter2(array: number[]): undefined | number {
+  let KeysMap: { [key: number]: number } = {};
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (KeysMap[array[i]] !== undefined) {
+      return array[i];
+    } else {
+      KeysMap[array[i]] = i;
+    }
+  }
+  return undefined;
+}
+
 const array01 = [2, 5, 1, 2, 3, 5, 1, 2, 4];
 const array02 = [2, 1, 1, 2, 3, 5, 1, 2, 4];
 const array03 = [2, 3, 4, 5];

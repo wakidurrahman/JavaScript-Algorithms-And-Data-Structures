@@ -31,7 +31,11 @@ function firstRecurringCharacter2(array: number[]): undefined | number {
   let KeysMap: { [key: number]: number } = {};
   for (let i = 0; i < array.length; i++) {
     const element = array[i];
-    if (KeysMap[array[i]] !== undefined) {
+    console.log(element);
+    console.log(KeysMap);
+    // if (KeysMap[array[i]] !== undefined) {
+    if (KeysMap[array[i]] === i) {
+      console.log(KeysMap[array[i]], i);
       return array[i];
     } else {
       KeysMap[array[i]] = i;
@@ -44,4 +48,5 @@ const array01 = [2, 5, 1, 2, 3, 5, 1, 2, 4];
 const array02 = [2, 1, 1, 2, 3, 5, 1, 2, 4];
 const array03 = [2, 3, 4, 5];
 // Call function
-firstRecurringCharacter(array01);
+// firstRecurringCharacter(array01);
+firstRecurringCharacter2(array02);

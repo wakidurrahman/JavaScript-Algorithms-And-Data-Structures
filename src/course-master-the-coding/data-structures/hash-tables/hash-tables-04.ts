@@ -24,7 +24,7 @@ function firstRecurringCharacter(array: number[]): number | undefined {
   }
   console.log('Nothing match : undefined');
   return undefined;
-}
+} // O(n^2)
 
 // Solution 02:
 function firstRecurringCharacter2(array: number[]): undefined | number {
@@ -33,8 +33,7 @@ function firstRecurringCharacter2(array: number[]): undefined | number {
     const element = array[i];
     console.log(element);
     console.log(KeysMap);
-    // if (KeysMap[array[i]] !== undefined) {
-    if (KeysMap[array[i]] === i) {
+    if (KeysMap[array[i]] !== undefined) {
       console.log(KeysMap[array[i]], i);
       return array[i];
     } else {
@@ -42,7 +41,18 @@ function firstRecurringCharacter2(array: number[]): undefined | number {
     }
   }
   return undefined;
-}
+} // O(n)
+
+// Solution 02:
+const firstRecurringCharacter3 = (array: number[]): undefined | number => {
+  const set: Set<number> = new Set();
+  for (let i = 0; i < array.length; i++) {
+    if (set.has(array[i])) return array[i];
+
+    set.add(array[i]);
+  }
+  return undefined;
+}; // O(n)
 
 const array01 = [2, 5, 1, 2, 3, 5, 1, 2, 4];
 const array02 = [2, 1, 1, 2, 3, 5, 1, 2, 4];

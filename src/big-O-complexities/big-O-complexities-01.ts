@@ -22,3 +22,19 @@ function printLinerTime(n: number) {
     console.log(i);
   }
 }
+
+console.log(printLinerTime(100));
+
+// O(n2) is quadratic time,
+
+function printQuadraticTime(n: number) {
+  for (let i = 0; i < n; i++) {
+    // parent loop
+    for (let j = 0; j < n; j++) {
+      // children loop
+      console.log(i, j);
+    }
+  }
+}
+
+console.log(printQuadraticTime(10));

@@ -31,5 +31,17 @@ function printQuadraticTime(n) {
             console.log(i, j);
         }
     }
-}
+} //
 console.log(printQuadraticTime(10));
+// O(n3) is cubic time
+function printCubicTime(array) {
+    for (var i = 0; i < array.length; i++) {
+        for (var j = i; j < array.length; j++) {
+            for (var k = j; k < array.length; k++) {
+                console.log(array[i], array[j], array[k]);
+            }
+        }
+    }
+}
+var cubicTimeArray = ['a', 'b', 'c', 'd', 'e', 'f'];
+console.log(printCubicTime(cubicTimeArray));

@@ -1,4 +1,5 @@
 /**
+ * Big-O is important for analyzing and comparing the efficiencies of algorithms.
  * Big-O Rule
  *
  * 1. Coefficient rule
@@ -98,7 +99,7 @@ function sumRule(boxes: string[], items: number[]) {
  */
 
 /**
- * Product Rule
+ * 3. Product Rule
  * The product rule simply states how Big-Os can be multiplied.
  */
 
@@ -129,3 +130,20 @@ function productRuleTwo(n: number) {
  * O(n^2)
  * O(n^2) is called Quadratic Time
  */
+
+/**
+ * 4. Polynomial Rule
+ * If f(n) is a polynomial of degree k, then f(n) is O(nˆk).
+ * The following code block has only one for loop with quadratic time complexity f(n) = nˆ2 because line 4 runs n*n iterations
+ */
+
+function polynomialRule(n: number) {
+  let count = 0;
+  for (let i = 0; i < n * n; i++) {
+    count += 1;
+  }
+  return count;
+}
+
+// O(n^2)
+// O(n^n)

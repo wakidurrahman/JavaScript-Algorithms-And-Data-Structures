@@ -92,12 +92,40 @@ function sumRule(boxes: string[], items: number[]) {
 }
 
 /**
- *  BIG O Calculation
+ * BIG O Calculation
  * O(n + n)
  * O( a + b )
  */
 
 /**
  * Product Rule
- *
+ * The product rule simply states how Big-Os can be multiplied.
+ */
+
+function productRuleOne(boxes: string | number[]) {
+  for (let i = 0; i < boxes.length; i++) {
+    // O(n)
+    for (let j = 0; j < boxes.length; j++) {
+      // O(n)
+      console.log(boxes[i], boxes[j]);
+    }
+  }
+}
+
+function productRuleTwo(n: number) {
+  var count = 0;
+  for (var i = 0; i < n; i++) {
+    count += 1; // O(n)
+    for (var i = 0; i < 5 * n; i++) {
+      count += 1; // O(n)
+    }
+  }
+  return count;
+}
+
+/**
+ * BIG O Calculation
+ * O(n * n)
+ * O(n^2)
+ * O(n^2) is called Quadratic Time
  */

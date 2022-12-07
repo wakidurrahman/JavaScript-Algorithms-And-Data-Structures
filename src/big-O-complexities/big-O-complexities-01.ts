@@ -13,6 +13,7 @@
  *
  * O(n3) is cubic time.
  *
+ * O(log(n))
  * logarithmic time complexity
  * is printing elements that are a power of 2 between 2 and n
 
@@ -57,6 +58,7 @@ const cubicTimeArray = ['a', 'b', 'c', 'd', 'e', 'f'];
 console.log(printCubicTime(cubicTimeArray));
 
 /**
+ * O(log(n))
  * The efficiency of logarithmic time complexities is apparent with large inputs such as a million items.
  * Although n is a million, exampleLogarithmic will print only 19 items because log2(1,000,000) = 19.9315686.
  */

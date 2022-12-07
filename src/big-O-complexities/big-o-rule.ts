@@ -145,5 +145,75 @@ function polynomialRule(n: number) {
   return count;
 }
 
-// O(n^2)
 // O(n^n)
+// O(n^2)
+
+/**
+ * Exercises
+ * Calculate the time complexities for each of the exercise code
+ */
+
+// Exercise 01
+
+function exercisesOne(n: number) {
+  for (let i = 0; i < n * 1000; i++) {
+    // O(n)
+    for (let j = 0; j < n * 2; j++) {
+      // O(n)
+      console.log(i, j);
+    }
+  }
+} // O(n^2)
+
+// Exercise 02
+function exercisesTwo(n: number) {
+  for (let i = 0; i < n; i++) {
+    // O(n)
+    for (let j = 0; j < n; j++) {
+      // O(n)
+      for (let k = 0; k < n; k++) {
+        // O(n)
+        for (let l = 0; l < 10; l++) {
+          // O(10) constant time iteration
+          console.log(i, j, k, l);
+        }
+      }
+    }
+  }
+}
+
+// O(n^3*10)
+// O(n^3)
+
+// Exercise 03
+
+function exercisesThree(): void {
+  for (let i = 0; i < 1000; i++) {
+    // O(1000) constant time iteration
+    console.log('Hi');
+  } //
+} // O(1)
+
+// Exercise 04
+function exercisesFour(n: number): void {
+  for (let i = 0; i < n * 10; i++) {
+    // O(n * 10)
+    console.log('Hi');
+  } //
+} // O(n * 10)  === O(n) remove constant.
+
+// Exercise 05
+function exercisesFive(n: number): void {
+  for (let i = 0; i < n; i * 2) {
+    // O(log2n)
+    console.log(i);
+  } //
+} // O(log2n) log 2 base n. For a given n, this will operate only log2n times because i is incremented by multiplying by 2
+
+// Exercise 06
+function exercisesSix(): void {
+  while (true) {
+    // O(∞) Infinite loop
+    console.log('hello');
+  }
+} //  O(∞)

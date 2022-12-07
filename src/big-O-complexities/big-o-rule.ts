@@ -113,10 +113,10 @@ function productRuleOne(boxes: string | number[]) {
 }
 
 function productRuleTwo(n: number) {
-  var count = 0;
-  for (var i = 0; i < n; i++) {
+  let count = 0;
+  for (let i = 0; i < n; i++) {
     count += 1; // O(n)
-    for (var i = 0; i < 5 * n; i++) {
+    for (let j = 0; j < 5 * n; j++) {
       count += 1; // O(n)
     }
   }

@@ -73,4 +73,31 @@ function coefficientRuleOneTwo(limit: number) {
 
 /**
  * 2. Sum Rule
+ * Imagine a master algorithm that involves two other algorithms.
+ * The Big-O notation of that master algorithm is simply the sum of the other two Big-O notations.
+ */
+
+function sumRule(boxes: string[], items: number[]) {
+  // For boxes iteration
+  boxes.forEach(element => {
+    // O(n)
+    console.log(element);
+  });
+
+  // For items iteration
+  items.forEach(element => {
+    // O(n)
+    console.log(element);
+  });
+}
+
+/**
+ *  BIG O Calculation
+ * O(n + n)
+ * O( a + b )
+ */
+
+/**
+ * Product Rule
+ *
  */

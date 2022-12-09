@@ -21,5 +21,5 @@ function isEquivalentObj(a: { [key: string]: number | string }, b: { [key: strin
   // If everything matched, correct
   return true;
 }
-
+// However, this would still work for objects that have only a string or a number as the property.
 isEquivalentObj({ hi: 12 }, { hi: 12 }); // Return true.

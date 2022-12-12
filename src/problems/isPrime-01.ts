@@ -4,7 +4,8 @@
  * One of the most discussed algorithms involving numbers is for testing whether a number is a prime number..
  * @returns
  */
-// A primality test can be done by iterating from 2 to n, checking whether modulus division (remainder) is equal to zero.
+// Algorithm 01:  A primality test can be done by iterating from 2 to n, checking whether modulus division (remainder) is equal to zero.
+// 2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97
 function isPrimeOne(n: number) {
   if (n <= 1) {
     return false;

@@ -57,3 +57,17 @@ function isPrimeNumber(number: number): boolean {
 
   return true;
 } // time complexity of O(sqrt(n)) is run n times.
+
+/**
+ * 3.
+ *
+ * Check for a set of prime factors.
+ *
+ */
+
+function maxDivide(number: number, divisor: number) {
+  while (number % divisor == 0) {
+    number /= divisor;
+  }
+  return number;
+}

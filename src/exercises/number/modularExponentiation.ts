@@ -63,11 +63,45 @@ function isPrimeNumber(number: number): boolean {
  *
  * Check for a set of prime factors.
  *
+ * The time complexity of maxDivide is a logarithmic function which depends on divisor and the number.
+ * When testing primes of 2, 3, and 5, the logarithmic of 2 (log2 (n)) yields the highest time complexity.
  */
 
-function maxDivide(number: number, divisor: number) {
+function maxDivide(number: number, divisor: number): number {
   while (number % divisor == 0) {
     number /= divisor;
   }
   return number;
-}
+} // Time Complexity for maxDivide(number, divisor): O(logdivisor(number))
+
+function isUgly(number: number): boolean {
+  number = maxDivide(number, 2);
+  number = maxDivide(number, 3);
+  number = maxDivide(number, 5);
+
+  return number === 1;
+} // Time Complexity for isUgly: O(log2(n))
+
+/**
+ * Iterate this over n, and now the list of ugly numbers can be returned.
+ * @param n
+ * @returns
+ *
+ * The isUgly function is limited by the time complexity of maxDivide(number, 2).
+ * Hence, arrayNUglyNumbers has n times that time complexity.
+ */
+
+function arrayNUglyNumbers(n: number): number[] {
+  let counter: number = 0;
+  let currentNumber: number = 1;
+  let uglyNumbers: number[] = [];
+
+  while (counter != n) {
+    if (isUgly(currentNumber)) {
+      counter++;
+      uglyNumbers.push(currentNumber);
+    }
+    currentNumber++;
+  }
+  return uglyNumbers;
+} // Time Complexity for arrayNUglyNumbers: O(n(log2(n)))

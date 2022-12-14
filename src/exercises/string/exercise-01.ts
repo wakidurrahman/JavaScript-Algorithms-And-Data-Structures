@@ -13,3 +13,6 @@
 'Hello world'.charAt(1); // returns 'e';
 'YouTube'.substring(1, 2); // returns 'o' : multiple-character access.
 'YouTube'.substring(3, 7); // returns 'Tube'
+'YouTube'.substring(1); // returns 'ouTube'
+
+// 2. String Comparison

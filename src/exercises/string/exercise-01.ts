@@ -25,3 +25,30 @@ const c = 'add';
 const d = 'ab';
 
 console.log(a < b); // Prints 'false'
+
+// String Search
+
+'Red Dragon'.indexOf('Red'); // returns 0;
+'Red Dragon'.indexOf('RedScale'); // returns -1
+'Red Dragon'.indexOf('Dragon', 0); // returns 4
+
+function existsInString(stringValue: string, search: string) {
+  return stringValue.indexOf(search) !== -1;
+}
+
+console.log(existsInString('red', 'r')); // prints 'true';
+console.log(existsInString('red', 'b')); // prints 'false';
+
+const stringLong = 'He is my king from this day until his last day';
+let count = 0;
+let pos = stringLong.indexOf('a');
+
+while (pos !== -1) {
+  count++;
+  pos = stringLong.indexOf('a', pos + 1);
+}
+
+console.log(count);
+
+'Red Dragon'.startsWith('Red'); // Returns true
+'Red Dragon'.endsWith('Dragon'); // Returns true

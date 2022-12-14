@@ -16,3 +16,12 @@
 'YouTube'.substring(1); // returns 'ouTube'
 
 // 2. String Comparison
+const a = 'a';
+const b = 'b';
+
+console.log(a < b); // Prints true;
+
+const c = 'add';
+const d = 'ab';
+
+console.log(a < b); // Prints 'false'

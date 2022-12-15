@@ -26,7 +26,7 @@ const d = 'ab';
 
 console.log(a < b); // Prints 'false'
 
-// String Search
+// 3. String Search
 
 'Red Dragon'.indexOf('Red'); // returns 0;
 'Red Dragon'.indexOf('RedScale'); // returns -1
@@ -52,3 +52,14 @@ console.log(count);
 
 'Red Dragon'.startsWith('Red'); // Returns true
 'Red Dragon'.endsWith('Dragon'); // Returns true
+
+// 04. String Decomposition
+const commaString = 'chicken,noodle,soup,broth';
+commaString.split(','); // returns  ["chicken", "noodle", "soup", "broth"]
+
+const onlyString = 'chicken';
+onlyString.split('');
+
+// 05. String Replace
+// .replace(string, replaceString) replaces a specified string within a string variable with another string.
+'Wizard of Oz'.replace('Wizard', 'Witch'); // 'Witch of Oz';

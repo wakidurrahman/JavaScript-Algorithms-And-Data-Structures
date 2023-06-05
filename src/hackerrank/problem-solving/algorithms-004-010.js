@@ -76,4 +76,34 @@ function plusMinus(arr) {
 arrayOfIntegers = [-4, 3, -9, 0, 4, 1];
 plusMinus(arrayOfIntegers);
 
-// 006:
+// 006: Given an array of bird sightings where every element represents a bird type id, determine the id of the most frequently sighted type. If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
+
+function migratoryBirds(arr) {
+  const arrayLength = arr.length;
+  let hashMap = {};
+
+  // determine the id of the most frequently sighted type
+  for (let i = 0; i < arrayLength; i++) {
+    let num = arr[i];
+    if (!hashMap[num]) {
+      hashMap[num] = 1;
+    } else {
+      hashMap[num]++;
+    }
+  }
+  let freq = 0;
+  let freqNum = null;
+  // If more than 1 type has been spotted that maximum amount,
+  // return the smallest of their ids.
+  for (let num in hashMap) {
+    if (hashMap[num] > freq) {
+      freq = hashMap[num];
+      freqNum = num;
+    }
+  }
+  return freqNum;
+}
+
+const arrayOfBirdSightings = [1, 4, 4, 4, 5, 3];
+
+migratoryBirds(arrayOfBirdSightings);

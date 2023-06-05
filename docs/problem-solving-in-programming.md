@@ -37,8 +37,10 @@ Before being ready to solve a problem, there are some steps and procedures to be
 
 Basically, they are divided into four categories:
 
-1. Analysing the problem.
-2. Developing the  algorithm.
+1. Analysing the problem: Every problem has a perfect solution; before we are ready to solve a problem, we must look over the question and understand it. When we know the question, it is easy to find the solution for it. If we are not ready with what we have to solve, then we end up with the question and cannot find the answer as expected. By analysing it, we can figure out the outputs and inputs to be carried out. Thus, when we analyse and are
+ready with the list, it is easy and helps us find the solution easily.
+
+2. Developing the  algorithm: It is required to decide a solution before writing a program. The procedure of representing the solution  in a natural language called an algorithm. We must design, develop and decide the final approach after a number of trials and errors, before actually writing the final code on an algorithm before we write the code. It captures and refines all the aspects of the desired solution.
 3. Coding.
 4. Testing and debugging.
 

@@ -76,4 +76,54 @@ function plusMinus(arr) {
 arrayOfIntegers = [-4, 3, -9, 0, 4, 1];
 plusMinus(arrayOfIntegers);
 
-// 006:
+/**
+ * 006:
+ * Given an array of bird sightings where every element represents a bird type id,
+ * determine the id of the most frequently sighted type.
+ * If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
+ * @param {*} arr == [1, 4, 4, 4, 5, 3]
+ * @returns smallest of their ids.
+ */
+function migratoryBirds(arr) {
+  // Array Length  declaration
+  const arrayLength = arr.length;
+  // Story hash map object where object will be store like [1, 4, 4, 4, 5, 3] => {1: 1, 3: 1, 4: 3, 5: 1}
+  let hashMap = {};
+
+  // determine the id of the most frequently sighted type
+  for (let i = 0; i < arrayLength; i++) {
+    let num = arr[i]; // array value
+    if (!hashMap[num]) {
+      hashMap[num] = 1; // assign object key when object key is not available inside 'hashMap'
+    } else {
+      hashMap[num]++; // Increment object key value when keys are the same;
+    }
+  }
+  let freq = 0; // Store Key value
+  let freqNum = null; // Store Key
+  // If more than 1 type has been spotted that maximum amount,
+  // return the smallest of their ids.
+  for (let num in hashMap) {
+    if (hashMap[num] > freq) {
+      freq = hashMap[num]; // Assign key value
+      freqNum = num; // story key
+    }
+  }
+  return freqNum; // return l
+}
+
+const arrayOfBirdSightings = [1, 4, 4, 4, 5, 3];
+
+migratoryBirds(arrayOfBirdSightings);
+
+// 007: Staircase detail
+
+function staircase(n) {
+  const line = Array(n + 1).fill(' ');
+  for (let i = n - 1; i >= 0; i--) {
+    line[i] = '#';
+    console.log(line[i]);
+  }
+}
+
+staircase(6);

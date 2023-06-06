@@ -107,3 +107,15 @@ function migratoryBirds(arr) {
 const arrayOfBirdSightings = [1, 4, 4, 4, 5, 3];
 
 migratoryBirds(arrayOfBirdSightings);
+
+// 007: Staircase detail
+
+function staircase(n) {
+  const line = Array(n + 1).fill(' ');
+  for (let i = n - 1; i >= 0; i--) {
+    line[i] = '#';
+    console.log(line[i]);
+  }
+}
+
+staircase(6);

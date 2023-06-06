@@ -127,3 +127,41 @@ function staircase(n) {
 }
 
 staircase(6);
+
+/**
+ * Given five positive integers,
+ * find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
+ * Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+ * @param {*} arr = [1, 2, 3, 7, 5, 9];
+ * Complete the 'miniMaxSum' function below.
+ *
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+function miniMaxSum(arr) {
+  // Array Length
+  const arrayLength = arr.length;
+  // minimum sum
+  let minSum = 0;
+  // maximum sum
+  let maxSum = 0;
+  // sort an array of integers array.
+  arr.sort((a, b) => a - b);
+
+  for (let i = 0; i < arrayLength; i++) {
+    // Iterate starting from the 0 index and finish before the last index
+    if (i < arrayLength - 1) {
+      minSum += arr[i];
+    }
+
+    // Iterate starting from the 1 index and finish  the last index
+    if (i > 0 && i < arrayLength) {
+      maxSum += arr[i];
+    }
+  }
+
+  console.log(`${minSum} ${maxSum}`);
+}
+
+const miniMaxSumArray = [1, 2, 3, 7, 5, 9];
+miniMaxSum(miniMaxSumArray);

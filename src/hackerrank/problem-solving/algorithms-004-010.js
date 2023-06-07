@@ -168,7 +168,7 @@ const miniMaxSumArray = [1, 2, 3, 7, 5, 9];
 miniMaxSum(miniMaxSumArray);
 
 /**
- * 008
+ * 009
  * You are in charge of the cake for a child's birthday.
  * You have decided the cake will have one candle for each year of their total age.
  * They will only be able to blow out the tallest of the candles.
@@ -180,5 +180,67 @@ miniMaxSum(miniMaxSumArray);
  */
 
 function birthdayCakeCandles(candles) {
-  // Write your code here
+  // array length
+  const arrayLength = candles.length;
+  // tallest  candle
+  const arrayMaxValue = Math.max(...candles);
+  // the number of candles that are tallest
+  let tallestCandles = 0;
+  for (let i = 0; i < arrayLength; i++) {
+    // check array max value and iterate value are same
+    if (candles[i] === arrayMaxValue) tallestCandles += 1;
+  }
+  // console.log(tallestCandles);
+  return tallestCandles;
 }
+
+/**
+ * 010
+ * Given a year, Y , find the date of the 256th day of that year according to the official Russian calendar during that year.
+ * Then print it in the format dd.mm.yyyy, where dd is the two-digit day, mm is the two-digit month, and yyyy is .
+ *
+ * Complete the 'dayOfProgrammer' function below.
+ *
+ * The function is expected to return a STRING
+ *
+ * The function accepts INTEGER year as parameter
+ */
+
+function dayOfProgrammer(year) {
+  let day = 13; // by default
+
+  // The transition from the Julian to Gregorian calendar system occurred in 1918
+  if (year === 1918) {
+    day += 13;
+  }
+  // From 1700 to 1917, Russia's official calendar was the Julian calendar;
+  else if (year < 1918) {
+    /**
+     * In the Julian calendar,
+     *
+     * **leap years are divisible by 4
+     */
+
+    if (year % 4 === 0) {
+      day = 12;
+    } else {
+      day = 13;
+    }
+  }
+  // since 1919 they used the Gregorian calendar system.
+  else if (year > 1918) {
+    /**
+     *  in the Gregorian calendar, leap years are either of the following:
+     *  ** Divisible by 400.
+     *  ** Divisible by 4 and not divisible by 100.
+     */
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+      day = 12;
+    } else {
+      day = 13;
+    }
+  }
+
+  return `${day}.09.${year}`;
+}
+dayOfProgrammer(1917);

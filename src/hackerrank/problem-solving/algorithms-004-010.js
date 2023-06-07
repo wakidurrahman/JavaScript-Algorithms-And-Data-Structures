@@ -129,6 +129,7 @@ function staircase(n) {
 staircase(6);
 
 /**
+ * 008
  * Given five positive integers,
  * find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
  * Then print the respective minimum and maximum values as a single line of two space-separated long integers.
@@ -165,3 +166,19 @@ function miniMaxSum(arr) {
 
 const miniMaxSumArray = [1, 2, 3, 7, 5, 9];
 miniMaxSum(miniMaxSumArray);
+
+/**
+ * 008
+ * You are in charge of the cake for a child's birthday.
+ * You have decided the cake will have one candle for each year of their total age.
+ * They will only be able to blow out the tallest of the candles.
+ * Count how many candles are tallest.
+ *
+ * Complete the 'birthdayCakeCandles' function below.
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY candles as parameter.
+ */
+
+function birthdayCakeCandles(candles) {
+  // Write your code here
+}

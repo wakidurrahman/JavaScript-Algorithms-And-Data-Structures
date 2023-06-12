@@ -29,3 +29,7 @@ function timeConversion(s) {
 
   return `${hours}:${minutes}:${seconds}`;
 }
+
+/**
+ * 012: grading
+ */

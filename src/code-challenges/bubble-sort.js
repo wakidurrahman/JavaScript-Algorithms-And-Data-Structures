@@ -26,3 +26,24 @@ function bubbleSortVariationNormal(arr) {
 }
 
 bubbleSortVariationNormal([6, 5, 3, 1, 8, 7, 2, 4]);
+
+// Recursively
+const bubbleSortVariationRecursive = function (array, pointer = array.length - 1) {
+  // Base check
+  if (pointer === 0) {
+    return array;
+  }
+
+  for (let i = 0; i < pointer; i++) {
+    if (array[i] > array[i + 1]) {
+      let temp = array[i + 1];
+      array[i + 1] = array[i];
+      array[i] = temp;
+    }
+  }
+
+  // Recursive call on smaller portion of the array
+  return bubbleSortVariationRecursive(array, pointer - 1);
+};
+
+bubbleSortVariationRecursive([6, 5, 3, 1, 8, 7, 2, 4]);

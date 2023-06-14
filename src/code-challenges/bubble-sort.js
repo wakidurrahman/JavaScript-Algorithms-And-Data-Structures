@@ -6,12 +6,11 @@
 
 // Normal
 function bubbleSortVariationNormal(arr) {
+  const len = arr.length - 1;
   let swaps;
   do {
     swaps = false;
-    for (let i = 0; i < arr.length - 1; i++) {
-      const element = arr[i];
-      console.log(element);
+    for (let i = 0; i < len; i++) {
       if (arr[i] > arr[i + 1]) {
         // start with the first two elements and sort them in ascending order. (Compare the element to check which one is greater).
         let temp = arr[i + 1]; // store second element for  swap

@@ -46,3 +46,54 @@ const bubbleSortVariationRecursive = function (array, pointer = array.length - 1
 };
 
 bubbleSortVariationRecursive([6, 5, 3, 1, 8, 7, 2, 4]);
+
+/**
+ * Lucky Sevens
+ * 002: Write a function called lucky_sevens which takes an array of integers and returns true if any three consecutive elements sum to 7.
+ */
+
+function luckySevensVariationOne(arrayOfIntegers) {
+  // Array length
+  const len = arrayOfIntegers.length;
+  // If array of length is less than 3 elements then this challenge is not possible.
+  if (len < 3) {
+    return 'Not possible';
+  }
+
+  // Because we know there are at least 3 elements we can
+  // Start the loop at the 3rd element in the array (i = 2);
+  // and check it along with the two previous elements (i - 1) and (i - 2)
+
+  for (let i = 0; i < len; i++) {
+    if (arrayOfIntegers[i] + arrayOfIntegers[i - 1] + arrayOfIntegers[i - 2] === 7) {
+      return true;
+    }
+  }
+
+  // if loop is finished and no elements summed to 7;
+  return false;
+}
+
+luckySevensVariationOne([2, 1, 5, 1, 0]);
+
+function luckySevensVariationTwo(array) {
+  const len = array.length;
+
+  // Iterate through the array.
+
+  for (let i = 0; i < len - 2; i++) {
+    let sum = array[i] + array[i + 1] + array[i + 2];
+
+    if (sum === 7) {
+      return true; // Found three consecutive elements that sum to 3;
+    }
+  }
+
+  return false; // No three consecutive elements sum to 7;
+}
+
+let numbersOfLuckySeven = [1, 2, 3, 4, 5, 6, 1];
+console.log(luckySevensVariationTwo(numbers)); // Output: true
+
+var numbers2OfLuckySeven = [1, 2, 3, 4, 5, 6, 2];
+console.log(luckySevensVariationTwo(numbers2OfLuckySeven)); // Output: false

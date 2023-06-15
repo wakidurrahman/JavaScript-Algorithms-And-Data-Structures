@@ -75,3 +75,25 @@ function luckySevensVariationOne(arrayOfIntegers) {
 }
 
 luckySevensVariationOne([2, 1, 5, 1, 0]);
+
+function luckySevensVariationTwo(array) {
+  const len = array.length;
+
+  // Iterate through the array.
+
+  for (let i = 0; i < len - 2; i++) {
+    let sum = array[i] + array[i + 1] + array[i + 2];
+
+    if (sum === 7) {
+      return true; // Found three consecutive elements that sum to 3;
+    }
+  }
+
+  return false; // No three consecutive elements sum to 7;
+}
+
+let numbersOfLuckySeven = [1, 2, 3, 4, 5, 6, 1];
+console.log(luckySevensVariationTwo(numbers)); // Output: true
+
+var numbers2OfLuckySeven = [1, 2, 3, 4, 5, 6, 2];
+console.log(luckySevensVariationTwo(numbers2OfLuckySeven)); // Output: false

@@ -42,3 +42,7 @@ function multiDimensionalSumOfSeveralArrayVariationReduce(array) {
   return array.reduce((t, e) => t.concat(e)).reduce((t, e) => t + e);
 }
 multiDimensionalSumOfSeveralArrayVariationReduce([[3, 2], [1], [4, 12]]);
+
+/**
+ * Q005: Test divisors of three
+ */

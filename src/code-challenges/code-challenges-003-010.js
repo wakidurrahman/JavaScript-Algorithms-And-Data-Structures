@@ -49,3 +49,22 @@ multiDimensionalSumOfSeveralArrayVariationReduce([[3, 2], [1], [4, 12]]);
  * Your goal is to print all numbers between low and high, and for each of these numbers print whether or not the number is divisible by 3.
  * If the number is divisible by 3, print the word "div3" directly after the number.
  */
+
+function testDivisors(low, high) {
+  // we'll store all numbers and strings within an array
+  // instead of printing directly to the console.
+  let output = [];
+
+  for (let i = low; i <= high; i++) {
+    // simply store the current number in the output array
+    output.push(i);
+
+    // Check if the current number is evenly divisible by 3
+    if (i % 3 === 0) output.push('div3');
+  }
+
+  // return all numbers and strings.
+  return output;
+}
+
+testDivisors(2, 10);

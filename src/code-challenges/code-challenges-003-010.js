@@ -68,3 +68,41 @@ function testDivisors(low, high) {
 }
 
 testDivisors(2, 10);
+
+/**
+ * Q006: Oddball sum
+ * Write a function called oddball_sum which takes in a list of numbers and returns the sum of all the odd elements.
+ * Try to solve with and without reduce function.
+ *
+ */
+
+function oddBallSumVariationNormal(numbs) {
+  // Final count of all odd numbers added up
+  let finalCount = 0;
+
+  // Loop through entire list
+  for (let i = 0; i < numbs.length; i++) {
+    // we divide by 2, and if there is a remainder then
+    // the number must be odd so we add it to finalCount.
+
+    if (numbs[i] % 2 === 1) {
+      finalCount += numbs[i];
+    }
+  }
+
+  return finalCount;
+}
+
+oddBallSumVariationNormal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
+
+function oddBallSumVariationReduce(numbs) {
+  return numbs.reduce((total, item) => {
+    if (item % 2 === 1) {
+      return (total += item);
+    }
+
+    return total;
+  }, 0);
+}
+
+oddBallSumVariationReduce([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);

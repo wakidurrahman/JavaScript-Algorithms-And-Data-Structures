@@ -45,4 +45,7 @@ multiDimensionalSumOfSeveralArrayVariationReduce([[3, 2], [1], [4, 12]]);
 
 /**
  * Q005: Test divisors of three
+ * You will be given 2 parameters: a low and high number.
+ * Your goal is to print all numbers between low and high, and for each of these numbers print whether or not the number is divisible by 3.
+ * If the number is divisible by 3, print the word "div3" directly after the number.
  */

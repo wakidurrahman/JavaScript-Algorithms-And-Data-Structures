@@ -1,6 +1,6 @@
 # Theoretical Questions
 
-`Q001:` What is typeof Operator?
+`Q001:` What is `typeof` Operator?
 
 Answer: JavaScript provides a `typeof` operator that can examine a value tell you what type is is:
 
@@ -51,3 +51,4 @@ obj['b'];
 obj['c'];
 
 ```
+

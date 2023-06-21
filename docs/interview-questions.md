@@ -52,3 +52,25 @@ obj['c'];
 
 ```
 
+
+`Q003:` Explain `arrays` in JavaScript.
+
+Answer: An `array` is an object that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed positions:
+
+```
+
+const arr = [
+  'hello world',
+  42,
+  true
+];
+
+arr[0]; // 'hello world';
+arr[1]; // 42
+arr[3]; // true
+arr.length? // 3
+
+
+typeof arr; // "object";
+
+```

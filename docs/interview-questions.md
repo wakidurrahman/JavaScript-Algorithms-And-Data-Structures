@@ -52,7 +52,6 @@ obj['c'];
 
 ```
 
-
 `Q003:` Explain `arrays` in JavaScript.
 
 Answer: An `array` is an object that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed positions:
@@ -74,3 +73,14 @@ arr.length? // 3
 typeof arr; // "object";
 
 ```
+
+`Q004:` What is `scope` in JavaScript?
+
+Answer: In JavaScript, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Only code inside that function can access that function's scoped variables.
+
+1. A variable name has to be unique within the same scope.
+2. A scope can be nested inside another scope.
+3. If one scope is nested inside another, code inside the innermost scope can access variables from either scope.
+
+
+`Q005:` What is `scope` in JavaScript?

@@ -1,6 +1,6 @@
 # Theoretical Questions
 
-`Q001:` What is typeof Operator?
+`Q001:` What is `typeof` Operator?
 
 Answer: JavaScript provides a `typeof` operator that can examine a value tell you what type is is:
 
@@ -51,3 +51,63 @@ obj['b'];
 obj['c'];
 
 ```
+
+`Q003:` Explain `arrays` in JavaScript.
+
+Answer: An `array` is an object that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed positions:
+
+```
+
+const arr = [
+  'hello world',
+  42,
+  true
+];
+
+arr[0]; // 'hello world';
+arr[1]; // 42
+arr[3]; // true
+arr.length? // 3
+
+
+typeof arr; // "object";
+
+```
+
+`Q004:` What is `scope` in JavaScript?
+
+Answer: In JavaScript, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Only code inside that function can access that function's scoped variables.
+
+1. A variable name has to be unique within the same scope.
+2. A scope can be nested inside another scope.
+3. If one scope is nested inside another, code inside the innermost scope can access variables from either scope.
+
+
+`Q005:` Explain `equality` in JavaScript.
+
+Answer: JavaScript has both strict and type converting comparisons:
+
+1. Strict comparison (`===`) checks for value quality without allowing coercion.
+
+`Q006:` Explain equality in JavaScript.
+
+
+Answer:
+`Q007:` Explain equality in JavaScript.
+
+
+Answer:
+`Q008:` Explain equality in JavaScript.
+
+
+Answer:
+`Q009:` Explain equality in JavaScript.
+
+
+Answer:
+`Q010:` Explain equality in JavaScript.
+
+
+Answer:
+
+

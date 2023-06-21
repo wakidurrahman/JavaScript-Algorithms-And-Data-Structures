@@ -83,4 +83,31 @@ Answer: In JavaScript, each function gets its own scope. Scope is basically a co
 3. If one scope is nested inside another, code inside the innermost scope can access variables from either scope.
 
 
-`Q005:` What is `scope` in JavaScript?
+`Q005:` Explain `equality` in JavaScript.
+
+Answer: JavaScript has both strict and type converting comparisons:
+
+1. Strict comparison (`===`) checks for value quality without allowing coercion.
+
+`Q006:` Explain equality in JavaScript.
+
+
+Answer:
+`Q007:` Explain equality in JavaScript.
+
+
+Answer:
+`Q008:` Explain equality in JavaScript.
+
+
+Answer:
+`Q009:` Explain equality in JavaScript.
+
+
+Answer:
+`Q010:` Explain equality in JavaScript.
+
+
+Answer:
+
+

@@ -180,3 +180,9 @@ exports.iterative = function (array) {
 
   return result;
 };
+
+/**
+ * Q007: Sum of Array Plus One
+ *
+
+ */

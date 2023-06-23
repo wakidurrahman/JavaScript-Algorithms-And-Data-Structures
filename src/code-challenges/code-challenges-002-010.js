@@ -193,3 +193,18 @@ exports.iterative = function (array) {
 module.exports = function (a, b) {
   return a.length === b.length && (a + a).indexOf(b) > -1;
 };
+
+/**
+ * Q009: Return the N-th value of the Fibonacci sequence. Solve in O(n)
+ */
+
+// The easiest solution that comes to mind here is iteration.
+
+function fibonacciNumbers(n) {
+  let arr = [0, 1];
+
+  for (let i = 2; i < n + 1; i++) {
+    arr.push(arr[i - 2] + arr[i - 1]);
+  }
+  return arr[n];
+}
